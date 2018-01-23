@@ -19,23 +19,23 @@
 /*-----------------------------------------------------------------------//
 // Fira Sans                                                             //
 //-----------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700);
 
 /*-----------------------------------------------------------------------//
 // Lato                                                                  //
 //-----------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic);
 
 /*-----------------------------------------------------------------------//
 // Titillium Web	                                                     //
 //-----------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic);
 
 
 /*===========================================================================//
 //                               ALL TAG Rules                               //
 //===========================================================================*/
-* { 
+* {
 	margin: 0;
 	padding: 0;
 }
