@@ -1,0 +1,246 @@
+/*===========================================================================//
+//                                                                           //
+//                                  Main CSS                                 //
+//                             Offline Page Style                            //
+//                                                                           //
+// All  information  contained  herein  is,  and  remains  the  property  of //
+// SmartlySoft  and  its suppliers, if any. The intellectual  and  technical //
+// concepts  contained   herein  are  proprietary  to  SmartlySoft  and  its //
+// suppliers  and  may be covered by Spain and Foreign Patents,  patents  in //
+// process,   and  are   protected  by   trade   secret  or  copyright  law. //
+// Dissemination  of  this information or reproduction of this  material  is //
+// strictly  forbidden unless prior written explicit permission is  obtained //
+// from SmartlySoft                                                          //
+//===========================================================================*/
+/*===========================================================================//
+//                                   FONTS                                   //
+//===========================================================================*/
+
+/*-----------------------------------------------------------------------//
+// Fira Sans                                                             //
+//-----------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,700);
+
+/*-----------------------------------------------------------------------//
+// Lato                                                                  //
+//-----------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic);
+
+/*-----------------------------------------------------------------------//
+// Titillium Web	                                                     //
+//-----------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic);
+
+
+/*===========================================================================//
+//                               ALL TAG Rules                               //
+//===========================================================================*/
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+/*===========================================================================//
+//                             GENERAL TAG Rules                             //
+//===========================================================================*/
+body,html {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, Sans Serif; font-size: 78%;
+	color: #333333;
+	text-align: center;
+background: rgb(197,222,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(197,222,234,1)), color-stop(31%,rgba(138,187,215,1)), color-stop(100%,rgba(6,109,171,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
+
+}
+
+img {
+	border: 0 none;
+	margin: 0 auto;
+}
+
+a {
+	color:white;
+}
+
+button {
+	cursor:pointer;
+}
+
+/*===========================================================================//
+//                                ABSTRACTIONS                               //
+//===========================================================================*/
+
+	/*-----------------------------------------------------------------------//
+	// VERTICALLY Centering                                                  //
+	//-----------------------------------------------------------------------*/
+	.vtable {
+		display:table;
+	}
+	.vtable-cell {
+		display:table-cell;
+		vertical-align: middle;
+		width:100%;
+	}
+
+	/*-----------------------------------------------------------------------//
+	// BLACK Screen                                                          //
+	//-----------------------------------------------------------------------*/
+	div.blackout {
+		display: none;
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.7);
+	}
+
+	/*-----------------------------------------------------------------------//
+	// CARDS                                                                 //
+	//-----------------------------------------------------------------------*/
+	.card {
+		width:100%;
+		display:table;
+		padding: 10px 0;
+	}
+
+	.card-details {
+		display:table-cell;
+		padding: 0 10px;
+	}
+
+/*===========================================================================//
+//                                MAIN SECTION                               //
+//===========================================================================*/
+
+	/*-----------------------------------------------------------------------//
+	// STRUCTURE                                                             //
+	//-----------------------------------------------------------------------*/
+	div.main {
+		position:absolute;
+		width: 70%;
+		min-height: 100%;
+		left: 15%;
+	}
+
+		/*...................................................................//
+		// Mobile                                                            //
+		//...................................................................*/
+		@media only screen and (max-width: 800px) {
+			div.main {
+				width: 100%;
+				left:0;
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			div.main {
+				min-height: 0;
+				top: 15px;
+			}
+		}
+
+	/*-----------------------------------------------------------------------//
+	// LOGO                                                                  //
+	//-----------------------------------------------------------------------*/
+	div.main img.logo {
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+	/*-----------------------------------------------------------------------//
+	// CARD                                                                  //
+	//-----------------------------------------------------------------------*/
+	div.main div.card {
+		border-style: solid none;
+		text-align:center;
+		color: white;
+	}
+
+	div.main div.card > div.card-details {
+		padding: 0 20px;
+	}
+
+	/*-----------------------------------------------------------------------//
+	// BUSINESS CARD                                                         //
+	//-----------------------------------------------------------------------*/
+	div.main div.business.card {
+		font-family: "Lato";
+		padding: 40px 0;
+		background-color: rgba(255,255,255,0.3);
+		border-color:white;
+		border-width:2px;
+		font-size:25px;
+		margin-top: 10px;
+
+	}
+
+	div.main div.business.card h1 {
+		font-family: "Fira Sans";
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 30px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.main div.business.card h2 {
+		font-size: 26px;
+		font-weight: normal;
+		font-style: italic;
+		margin-bottom: 30px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body > div.vtable.main > div > div.business.card > div > a {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	body > div.vtable.main > div > div.business.card > div.card-details {
+		position: relative;
+		float: left;
+		width: 100%;
+		padding: 0px 10px;
+	}
+
+	div.main div.business.card p.subheading {
+		margin-bottom:15px;
+	}
+
+	/*-----------------------------------------------------------------------//
+	// MESSAGE CARD                                                          //
+	//-----------------------------------------------------------------------*/
+	div.main div.message.card {
+		border-color: #FFB83D;
+		border-width: 2px;
+		font-family: "Titillium Web";
+		font-size: 16px;
+		font-weight: 100;
+		color: #FFE2B0;
+		background-color: rgba(108, 108, 108, 0.3);
+		padding: 20px 0;
+	}
+
+		/*...................................................................//
+		// Mobile                                                            //
+		//...................................................................*/
+		@media only screen and (max-width: 1300px) {
+
+			div.business.card > div.card-details {
+				position: relative;
+				width: 100%;
+				padding: 0px;
+				display: block;
+			}
+		}
